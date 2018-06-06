@@ -8,7 +8,7 @@
 	body, footer {
 		width: auto;
 		margin: 0;
-		padding: 0;
+		padding: 4px;
 	}
 	
 	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
@@ -24,7 +24,8 @@
 	iframe,
 	object,
 	embed,
-	video {
+	video,
+	fieldset {
 		max-width: 100%;
 	}
 	
