@@ -67,6 +67,10 @@ fieldset p ~ p { /*p suivant p dans un fieldset*/
 	font-style: italic;
 }
 
+.gr {
+	font-weight: bold;
+}
+
 @media screen {
 	body {
 		margin-left: auto;
