@@ -1,0 +1,44 @@
+body {
+	background-color: #272822;
+	color: #F8F8F2;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+fieldset {
+	border: 1px solid;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+fieldset+fieldset { /*fieldset en dessous d'un autre fieldset*/
+	margin-top: 8px;
+}
+
+h3 {
+	text-decoration: underline;
+	margin-left: 2em;
+}
+
+/* 
+On cherche à feinter le système pour ne pas avoir des écarts démesurés
+entre le bord du cadre et le texte, en haut et en bas dans les fieldsets.
+
+A voir s'il ne vaut mieux mettre une classe fin et une classe début, mais 
+en attendant, ça fait le taf.
+*/
+
+fieldset p { /*p dans un fieldset*/
+	margin: 0;
+}
+
+fieldset p ~ p { /*p suivant p dans un fieldset*/
+	margin-top: 1em; /*valeur par défaut*/
+}
+
+.thm {
+	border-color: #F92672;
+}
+
+.def {
+	border-color: #A6E22E;
+}
