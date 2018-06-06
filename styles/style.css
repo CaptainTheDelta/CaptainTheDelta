@@ -68,9 +68,9 @@ fieldset p ~ p { /*p suivant p dans un fieldset*/
 .gr {
 	font-weight: bold;
 }
-/*
+
 @media screen {
-	body {
+	body, footer {
 		margin-left: auto;
 		margin-right: auto;
 		width: 700px;
@@ -79,8 +79,8 @@ fieldset p ~ p { /*p suivant p dans un fieldset*/
 }
 
 @media handheld {
-	body {
+	body, footer {
 		padding: 8px;
 		margin: 0;
 	}
-}*/
+}
