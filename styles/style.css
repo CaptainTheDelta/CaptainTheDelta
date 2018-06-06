@@ -42,3 +42,9 @@ fieldset p ~ p { /*p suivant p dans un fieldset*/
 .def {
 	border-color: #A6E22E;
 }
+
+@media handheld {
+	.mjx-row {
+		font-size: 100% !important;
+	}
+}
