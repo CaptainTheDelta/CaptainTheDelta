@@ -5,7 +5,7 @@
 	
 	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
 
-	body {
+	body, footer {
 		width: auto;
 		margin: 0;
 		padding: 0;
