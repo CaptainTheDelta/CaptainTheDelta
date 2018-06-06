@@ -5,15 +5,24 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/style.css">
     <!-- JS pour le LaTeX -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js' async></script>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
+        jax: ["input/TeX","output/CommonHTML"],
+        extensions: ["tex2jax.js"],
         tex2jax: {
           inlineMath: [ ['$','$'] ],
           processEscapes: true
+        },
+        styles :{
+          "@media handheld" : {
+            ".mjx-mrow": {
+              "font-size" : "95%"
+            }
+          }
         }
       });
     </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
   </head>
   <body>
   <h1>Analyse</h1>
