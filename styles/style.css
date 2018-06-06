@@ -77,10 +77,3 @@ fieldset p ~ p { /*p suivant p dans un fieldset*/
 		background-color: red;
 	}
 }
-
-@media handheld {
-	body, footer {
-		padding: 8px;
-		margin: 0;
-	}
-}
