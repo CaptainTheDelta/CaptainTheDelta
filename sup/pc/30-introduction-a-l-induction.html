@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Chapitre 30 - Introduction à l'induction</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- JS pour le LaTeX -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js' async></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX","output/CommonHTML"],
+        extensions: ["tex2jax.js"],
+        tex2jax: {
+          inlineMath: [ ['$','$'] ],
+          processEscapes: true
+        },
+        minScaleAdjust: 90
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Chapitre 30 - Introduction à l'induction</h1>
+    <h2>I. Présentation de l'induction</h2>
+    
+    <fieldset class="def">
+      <legend>Induction</legend>
+      <p>
+        Le phénomène d'induction correspond à l'apparition d'un courant induit dans un circuit sous l'action d'un champ magnétique.
+      </p>
+    </fieldset>
+
+    <h2>II. Les lois de l'induction</h2>
+    <fieldset class="thm">
+      <legend>Loi de modération de Lenz</legend>
+      <p>
+        Les phénomènes d'induction par leurs effets, s'opposent aux causes qui leur ont donné naissance.
+      </p>
+    </fieldset>
+
+    <fieldset class="def">
+      <legend>Flux magnétique</legend>
+      <p>
+        Le flux $\Phi$ d'un champ magnétique $\vec B$ à travers une surface orientée $\vec S = \iint_S \vec{dS}$ est donné par :
+        $$\Phi = \iint_S \vec B \cdot \vec{dS}$$
+      </p>
+    </fieldset>
+
+    <fieldset class="thm">
+      <legend>Loi de Faraday</legend>
+      <p>
+        Les courants induits sont générés par une tension appelée force électromotrice induite (<span class="it">fem</span> induite) notée $e$ telle que :
+        $$e = -\frac{d\Phi}{dt}$$
+      </p>
+    </fieldset>
+  </body>
+  
+  <footer>
+    <br>
+    <hr>
+    <div>
+      <p>
+        Revenir à l'<a href="../../index.html">index</a>.
+      </p>
+    </div>
+  </footer>
+</html> 

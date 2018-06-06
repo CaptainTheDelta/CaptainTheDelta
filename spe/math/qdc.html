@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Questions de cours</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- JS pour le LaTeX -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js' async></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX","output/CommonHTML"],
+        extensions: ["tex2jax.js"],
+        tex2jax: {
+          inlineMath: [ ['$','$'] ],
+          processEscapes: true
+        },
+        minScaleAdjust: 90
+      });
+    </script>
+  </head>
+  <body>
+  <h1>Analyse</h1>
+  <div>
+    <h3>Sommes de Riemann</h3>
+    <p>
+      La fonction $f$ étant continue sur un segment $[a,b]$, on se propose de déterminer une valeur approchée de l'intégrale $\int_a^bf(x)dx$.
+    </p>
+    <p>
+      En subdivisant l'intervalle en n sous-intervalles $[a_i,a_{i+1}]$ de même amplitude $(b-a)/n$:<br>
+      On définit deux sommes de Riemann de $f$ sur $[a,b]$: 
+      $$S_n       = \frac{b-a}{n}\cdot\sum_{k=0}^{n-1}\ f\left[a + \frac{k(b-a)}{n}\right]$$
+      $$\Sigma_n  = \frac{b-a}{n}\cdot\sum_{k=1}^{n}  \ f\left[a + \frac{k(b-a)}{n}\right]$$
+    </p>
+  </div>
+  <hr>
+  <h1>Probabilités</h1>
+  <div>
+    <h3>Inégalités de Markov et de Bienaymé-Tchebychev</h3>
+    <ul>
+      <li>Markov</li>
+    </ul>
+    <p>Soit $X$ une variable aléatoire discrète.</p>
+    <p>
+      Si $E[X]$ est finie, pour tout réel $a$ strictement positif,
+      $$P(|X|\ge a) \le \frac{1}{a} E[|X|]$$
+    </p>
+    <p>
+      Si $E[X^2]$ est finie, pour tout réel $a$ strictement positif,
+      $$P(|X|\ge a) \le \frac{1}{a^2} E[X^2]$$
+    </p>
+    <ul>
+      <li>Bienaymé-Tchebychev</li>
+    </ul>
+    <p>Soit $X$ une variable aléatoire discrète telle que $X^2$ ait une espérance finie.</p>
+    <p>
+      Alors, pour tout réel $a$ strictement positif,
+      $$P\left(\left|\frac{X-E[X]}{\sigma(X)}\right|\ge a\right) \le \frac{1}{a^2}$$
+    </p>
+  </div>
+  <hr>
+
+  <h1>Algèbre-Géométrie</h1>
+    <div>
+      <h3>Définition du produit scalaire</h3>
+      <p>
+        Soit $E$ un espace vectoriel sur $\mathbb R$. Un produit scalaire sur $E$ est une forme bilinéaire $\varphi$ sur $E$ qui est symétrique, définie et postitive,<br>
+        c'est à dire, $\varphi$ est une application de $E^2$ dans $\mathbb R$ qui est:
+      </p>
+      <ul>
+        <li>symétrique : $\varphi(\vec u,\vec v) = \varphi(\vec v, \vec u)$</li>
+        <li>bilinéaire: $\varphi(\vec{u_1} + \lambda \vec{u_2},\vec v) = \varphi(\vec{u_1},\vec v) + \lambda\varphi(\vec{u_2},\vec v)$</li>
+        <li>positive: $\varphi(\vec u,\vec u) \ge 0$</li>
+        <li>définie: $\varphi(\vec u,\vec u) = 0 \Rightarrow \vec u = \vec 0$</li>
+      </ul>
+    </div>
+    <br>
+    <div>
+      <h3>Produits scalaires canoniques, exemples</h3>
+      <p>
+        Soient $a$ et $b$ deux réels distincts. L'application 
+        $$\phi : (f,g) \mapsto \int_a^b f(x)g(x)dx$$
+        défini un produit scalaire sur l'espace vectoriel $\mathcal C([a,b],\mathbb R)$.
+      </p>
+      <p>
+        Sur $\mathbb R^n$, si $x=(x_1,...,x_n)$ et $y=(y_1,...,y_n)$ alors
+        $$\langle x,y \rangle = \sum_{i=1}^n x_i\ y_i$$
+      </p>
+      <p>
+        Sur $\mathbb R_n[X]$, si $P = \sum_{i=0}^n a_i X^i$ et $Q = \sum_{i=0}^n b_i X^i$ alors
+        $$\langle P,Q \rangle = \sum_{i=0}^n a_i\ b_i$$
+      </p>
+      <p>
+        Sur $\mathcal M_n(\mathbb R)$, si $A = (a_{ij})_{1\le i,j \le n}$ et $B = (a_{ij})_{1\le i,j \le n}$ alors
+        $$\langle A,B \rangle = \sum_{i=1}^n\sum_{j=1}^n a_{ij}\ b_{ij} = \text{tr}(^tAB)$$
+      </p>
+    </div>
+  </body>
+
+  <footer>
+    <br>
+    <hr>
+    <div>
+      <p>
+        Revenir à l'<a href="../../index.html">index</a>.
+      </p>
+    </div>
+  </footer>
+</html> 

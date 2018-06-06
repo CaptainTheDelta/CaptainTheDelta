@@ -4,6 +4,24 @@ body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	padding: 8px;
 	margin: 0;
+	text-indent: 10px;
+}
+
+footer {
+	text-align: center;
+}
+
+a, a:visited {
+	color: #E6DB74;
+}
+
+code {
+	display: block;
+	font-family: courier;
+	border-left: 4px solid #181915;
+	padding-left: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 fieldset {
@@ -45,8 +63,14 @@ fieldset p ~ p { /*p suivant p dans un fieldset*/
 	border-color: #A6E22E;
 }
 
-@media handheld {
-	.mjx-row {
-		font-size: 100% !important;
+.it {
+	font-style: italic;
+}
+
+@media screen {
+	body {
+		margin-left: auto;
+		margin-right: auto;
+		width: 700px;
 	}
 }
