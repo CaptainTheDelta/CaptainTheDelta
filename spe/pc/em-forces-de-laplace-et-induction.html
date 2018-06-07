@@ -22,7 +22,7 @@
   </head>
   <body>
   <h1>EM : Forces de Laplace et induction</h1>
-  <h2>Forces de Laplace</h2>
+  <h2>I. Forces de Laplace</h2>
 
   <fieldset class="thm">
       <legend>Force de Lorentz</legend>
@@ -33,16 +33,104 @@
       </p>
     </fieldset>
 
+    <fieldset class="def">
+      <legend>Moment magnétique</legend>
+      <p>
+        Soit $(\mathcal C)$ un circuit orienté, parcouru par un courant $I$ stationnaire. Le moment magnétique de ce circuit est :
+        $$\vec{\mathcal M} = I \iint_{S(\mathcal{C})} \overrightarrow{dS}$$
+        en $A.m^2$.
+      </p>
+      <p>
+        Cas particuliers :
+      </p>
+      <ul>
+        <li>
+          Spire circulaire de rayon $a$ :
+          $$\vec{\mathcal M} = I\pi a^2\vec n = I\vec S$$
+        </li>
+        <li>
+          Circuit de $N$ spires :
+          $$\vec{\mathcal M} = N \cdot I\vec S$$
+        </li>
+      </ul>
+    </fieldset>    
+
     <fieldset class="thm">
       <legend>Force de Laplace</legend>
       <p>
         Force exercée sur un <span class='gr'>élément conducteur</span> parcouru par un courant $I$ et placé dans un champ magnétique.
       </p>
       <p>
-        Force de Laplace à laquelle est soumis un élément de longueur $\vec {dl}$ d'un conducteur filiforme placé dans le champ magnétique $\vec B$ :
-        $$d\vec{F_L} = I \vec{dl} \land \vec B$$
+        Force de Laplace à laquelle est soumis un élément de longueur $\overrightarrow{d\ell}$ d'un conducteur filiforme placé dans le champ magnétique $\vec B$ :
+        $$\vec{F_L} = \int_M^{M'} I \overrightarrow{d\ell} \land \vec B$$
       </p>
     </fieldset>
+
+    <p>Torseur des forces de Laplace :</p>
+    <ul>
+      <li>Résultante : $\overrightarrow{F_L}$</li>
+      <li>Moment en O : $\overrightarrow{\Gamma_L}(O) = \int_{circuit} \overrightarrow{OM}\land [i\overrightarrow{d\ell}\land \vec B]$</li>
+    </ul>
+    
+    <h2>II. Induction électromagnétique</h2>
+    
+    <fieldset class="def">
+      <legend>Induction</legend>
+      <p>
+        Apparition d'une force électro-motrice induite (<span class="it">fem</span>) (ou d'un courant induit si le circuit électrique est fermé) dans un circuit électrique soumis à un champ magnétique variable au cours du temps.
+      </p>
+    </fieldset>
+    <ul>
+      <li><span class="gr">Induction de Lorentz</span> : circuit mobile, champ magnétique permanent</li>
+      <li><span class="gr">Induction de Neumann</span> : circuit fixe, champ magnétique variable</li>
+    </ul>
+
+    <fieldset class="thm">
+      <legend>Loi de Faraday</legend>
+      <p>
+        Dans un circuit électrique fermé, soumis à un flux magnétique $\Phi(t) = \iint_S \vec B \overrightarrow{dS}$ variable au cours du temps, il y a apparition d'un courant induit d'intensité égale à celle que produirait une source de tension idéale de <span class="it">fem</span> :
+        $$e_{ind} = - \frac{d\Phi}{dt}$$
+      </p>
+    </fieldset>
+
+    <fieldset class="thm">
+      <legend>Loi de Lenz (loi de modération)</legend>
+      <p>
+        Les effets de l'induction s'opposent à la cause qui les a produits.
+      </p>
+    </fieldset>
+    
+    <div>
+      <p class="gr">Méthode générale d'étude</p>
+      <ol>
+        <li>Orientation du circuit</li>
+        <li>Analyse quantitative du fonctionnement du dispositif : loi de Lenz</li>
+        <li>Calcul de la fem induite $e_{ind}$ : loi de Faraday</li>
+        <li>Bilan électrique</li>
+        <li>Bilan mécanique : forces de Laplace + PFD</li>
+        <li>Vérification des hypothèses</li>
+      </ol>
+    </div>
+
+    <h2>III. Inductance propre et inductance mutuelle</h2>
+    
+    <fieldset class="def">
+      <legend>Flux propre</legend>
+      <p>
+        Flux du champ créé par un circuit $(\mathcal C)$ à travers le circuit $(\mathcal C)$ lui-même :
+        $$\Phi_{propre} = \iint_S \vec B \cdot \overrightarrow{dS}$$
+      </p>
+    </fieldset>
+
+    <fieldset class="def">
+      <legend>Inductance propre</legend>
+      <p>
+        $\Phi_{propre}$ est proportionnel à i :
+        $$\Phi_{propre} = Li$$
+        $L$ est l'inductance propre en Henry ($H$), $L>0$ et dépend de la géométrie du circuit.
+      </p>
+    </fieldset>
+
   </body>
 
   <footer>
