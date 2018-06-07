@@ -1,3 +1,7 @@
+/** {
+	border: 1px dashed;
+}*/
+
 body {
 	background-color: #272822;
 	color: #F8F8F2;
@@ -9,6 +13,15 @@ footer {
 	text-align: center;
 }
 
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-decoration: underline;
+	margin-left: 2em;
+}
+
 a, a:visited {
 	color: #E6DB74;
 }
@@ -16,10 +29,11 @@ a, a:visited {
 code {
 	display: block;
 	font-family: courier;
-	border-left: 4px solid #181915;
+	border-left: 4px solid #465457;
 	padding-left: 0px;
 	padding-top: 2px;
 	padding-bottom: 2px;
+	margin-top: 0.1em;
 }
 
 fieldset {
@@ -32,9 +46,8 @@ fieldset+fieldset { /*fieldset en dessous d'un autre fieldset*/
 	margin-top: 8px;
 }
 
-h3 {
-	text-decoration: underline;
-	margin-left: 2em;
+legend {
+	padding-right: 0.5em;
 }
 
 /* 
@@ -51,6 +64,11 @@ fieldset p { /*p dans un fieldset*/
 
 fieldset p ~ p { /*p suivant p dans un fieldset*/
 	margin-top: 1em; /*valeur par défaut*/
+	background-color: black;
+}
+
+.meth {
+	border-left: 4px solid #465457;
 }
 
 .thm {
@@ -67,6 +85,18 @@ fieldset p ~ p { /*p suivant p dans un fieldset*/
 
 .gr {
 	font-weight: bold;
+}
+
+.sred {
+	text-decoration: underline #F92672;
+}
+
+.sgreen {
+	text-decoration: underline #A6E22E;
+}
+
+.sblue {
+	text-decoration: underline #66D9EF;
 }
 
 @media screen {

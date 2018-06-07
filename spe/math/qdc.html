@@ -16,14 +16,16 @@
           inlineMath: [ ['$','$'] ],
           processEscapes: true
         },
-        minScaleAdjust: 90
+        CommonHTML: {
+          minScaleAdjust: 90
+        }
       });
     </script>
   </head>
   <body>
-  <h1>Analyse</h1>
+  <h1 class="sred">Analyse</h1>
   <div>
-    <h3>Sommes de Riemann</h3>
+    <h3 class="sblue">Sommes de Riemann</h3>
     <p>
       La fonction $f$ étant continue sur un segment $[a,b]$, on se propose de déterminer une valeur approchée de l'intégrale $\int_a^bf(x)dx$.
     </p>
@@ -35,9 +37,9 @@
     </p>
   </div>
   <hr>
-  <h1>Probabilités</h1>
+  <h1 class="sred">Probabilités</h1>
   <div>
-    <h3>Inégalités de Markov et de Bienaymé-Tchebychev</h3>
+    <h3 class="sblue">Inégalités de Markov et de Bienaymé-Tchebychev</h3>
     <ul>
       <li>Markov</li>
     </ul>
@@ -51,7 +53,7 @@
       $$P(|X|\ge a) \le \frac{1}{a^2} E[X^2]$$
     </p>
     <ul>
-      <li>Bienaymé-Tchebychev</li>
+      <li class="sblue">Bienaymé-Tchebychev</li>
     </ul>
     <p>Soit $X$ une variable aléatoire discrète telle que $X^2$ ait une espérance finie.</p>
     <p>
@@ -61,9 +63,9 @@
   </div>
   <hr>
 
-  <h1>Algèbre-Géométrie</h1>
+  <h1 class="sred">Algèbre-Géométrie</h1>
     <div>
-      <h3>Définition du produit scalaire</h3>
+      <h3 class="sblue">Définition du produit scalaire</h3>
       <p>
         Soit $E$ un espace vectoriel sur $\mathbb R$. Un produit scalaire sur $E$ est une forme bilinéaire $\varphi$ sur $E$ qui est symétrique, définie et postitive,<br>
         c'est à dire, $\varphi$ est une application de $E^2$ dans $\mathbb R$ qui est:
@@ -77,7 +79,7 @@
     </div>
     <br>
     <div>
-      <h3>Produits scalaires canoniques, exemples</h3>
+      <h3 class="sblue">Produits scalaires canoniques, exemples</h3>
       <p>
         Soient $a$ et $b$ deux réels distincts. L'application 
         $$\phi : (f,g) \mapsto \int_a^b f(x)g(x)dx$$
