@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>EM : Forces de Laplace et induction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/smartphone.css">
+    <!-- JS pour le LaTeX -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js' async></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX","output/CommonHTML"],
+        extensions: ["tex2jax.js"],
+        tex2jax: {
+          inlineMath: [ ['$','$'] ],
+          processEscapes: true
+        },
+        minScaleAdjust: 90
+      });
+    </script>
+  </head>
+  <body>
+  <h1>EM : Forces de Laplace et induction</h1>
+  <h2>Forces de Laplace</h2>
+
+  <fieldset class="thm">
+      <legend>Force de Lorentz</legend>
+      <p>
+        Force sur une particule chargée placée dans un champ $(\vec E,\vec B)$ :
+        $$\vec F = q \left(\vec E + \vec v \land \vec B\right)$$
+        avec $\vec E$, $\vec v$ et $\vec B$ fonctions de $(\vec r,t)$
+      </p>
+    </fieldset>
+
+    <fieldset class="thm">
+      <legend>Force de Laplace</legend>
+      <p>
+        Force exercée sur un <span class='gr'>élément conducteur</span> parcouru par un courant $I$ et placé dans un champ magnétique.
+      </p>
+      <p>
+        Force de Laplace à laquelle est soumis un élément de longueur $\vec {dl}$ d'un conducteur filiforme placé dans le champ magnétique $\vec B$ :
+        $$d\vec{F_L} = I \vec{dl} \land \vec B$$
+      </p>
+    </fieldset>
+  </body>
+
+  <footer>
+    <br>
+    <hr>
+    <div>
+      <p>
+        Revenir à l'<a href="../../index.html">index</a>.
+      </p>
+    </div>
+  </footer>
+</html> 
