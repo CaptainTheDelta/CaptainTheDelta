@@ -171,6 +171,74 @@
       </p>
     </div>
 
+    <div>
+      <h3 class="sblue">Procédé d'orthonormalisation de Gram-Schmidt</h3>
+      <ul>
+        <li>Théorème</li>
+      </ul>
+      <p>
+        Si $(\vec e_n)_{n \ge 1}$ est une famille libre d'un espace préhilbertien $E$, il existe une unique famille orthonormée $(\vec e_n')_{n \ge 1}$ telle que, pour tout $k \ge 1$,
+        $$Vect(\vec e_1,...,\vec e_k)=Vect(\vec e_1',...,\vec e_k')$$
+        et 
+        $$\langle \vec e_k, \vec e_k' \rangle > 0$$ 
+      </p>
+      <div class="meth">
+        <ul>
+          <li>Procédé</li>
+        </ul>
+        <p>
+          Algorithme de construction dans un espace préhilbertien d'une famille orthonormée $(\vec e_n')_{n \ge 1}$ à partir d'une famille libre $(\vec e_n)_{n \ge 1}$.
+        </p>
+        <p>
+          Pour cela, on montre par récurrence la proposition $\mathcal P_k$ suivante :<br>
+          Il existe une famille orthonormée de vecteurs $(\vec e_1',...,\vec e_k')$ telle que $Vect(\vec e_1,...,\vec e_k)=Vect(\vec e_1',...,\vec e_k')$ et $\langle \vec e_k, \vec e_k' \rangle > 0$.
+        </p>
+        <p>
+          On fonde la récurrence en posant $\vec e_1' = \vec e_1/\|\vec e_1\| vecteur unitaire tel que :
+          $$\langle \vec e_1',\vec e_1\rangle = \|\vec e_1\| > 0$$
+        </p>
+        <p>
+          On suppose $\mathcal P_k$ vraie, on pose alors :
+          $$\vec u_{k+1}' = \vec e_{k+1} + \lambda_1\vec e_{1}'+...+\lambda_k\vec e_{k}'$$
+          puis
+          $$\vec e_{k+1}' = \frac{\vec u_{k+1}'}{\|\vec u_{k+1}'\|}$$
+          et on détermine les réels $\lambda_1,...,\lambda_{k}$ de sorte que $\vec e_{k+1}'$ soit orthogonal à chaque $\vec e_{i}'$, pour $i$ allant de $1$ à $k$, c'est à dire, puisque $\mathcal P_k$ est vraie,
+          $$\langle \vec e_{k+1}',\vec e_{i}'\rangle = 0 = \langle\vec e_{k+1},\vec e_{i}'\rangle + \lambda_i$$
+          on en déduit,
+          $$\lambda_i = -\langle\vec e_{k+1},\vec e_{i}'\rangle$$
+          De plus, $Vect(\vec e_1,...,\vec e_k)=Vect(\vec e_1',...,\vec e_k')$ donc $\vec u_{k+1}' \neq 0$ et $\vec e_{k+1}' \in Vect(\vec e_1,...,\vec e_{k+1})$. Donc
+          $$Vect(\vec e_1,...,\vec e_{k+1}) \subset Vect(\vec e_1',...,\vec e_{k+1}')$$
+          De plus, par construction, $\vec e_{k+1}' \in Vect(\vec e_1',...,\vec e_{k+1}')$ et par hypothèse de récurrence, $\vec e_1,...,\vec e_k$ sont combinaisons linéaires de $\vec e_1',...,\vec e_k'$. Donc
+          $$Vect(\vec e_1',...,\vec e_{k+1}') \subset Vect(\vec e_1,...,\vec e_{k+1})$$
+          Enfin,
+          $$1=\|\vec e_{k+1}'\|^2 = \left\langle\frac{\vec u_{k+1}'}{\|\vec u_{k+1}'\|}, \vec e_{k+1}'\right\rangle$$
+          d'où
+          $$\|\vec u_{k+1}'\| = \langle\vec e_{k+1},\vec e_{k+1}'\rangle > 0$$
+          On a terminé la récurrence en prouvant que  $\mathcal P_{k+1}$ est vraie.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="sblue">Inégalité de Cauchy-Schwarz, de Minkovsky</h3>
+      <ul>
+        <li>Cauchy-Schwarz</li>
+      </ul>
+      <p>
+        Pour tous vecteurs $\vec u$ et $\vec v$ d'un espace préhilbertien $E$,
+        $$|\langle \vec u, \vec v \rangle| \le \|\vec u\|\cdot\|\vec v\|$$
+        avec égalité si et seulement si les deux vecteurs $\vec u$ et $\vec v$ sont colinéaires.
+      </p>
+      <ul>
+        <li>Minkovsky</li>
+      </ul>
+      <p>
+        Pour tous vecteurs $\vec u$ et $\vec v$ d'un espace préhilbertien $E$,
+        $$\|\vec u + vec v\| \le \|\vec u\|+\|\vec v\|$$
+        avec égalité si et seulement si les deux vecteurs $\vec u$ et $\vec v$ sont colinéaires.
+      </p>
+    </div>
+
   </body>
 
   <footer>
