@@ -1,4 +1,4 @@
-MathJax.Hub.Config({
+window.MathJax{
   jax: ["input/TeX","output/CommonHTML"],
   extensions: ["tex2jax.js"],
   tex2jax: {
@@ -6,4 +6,4 @@ MathJax.Hub.Config({
     processEscapes: true
   },
   minScaleAdjust: 90
-});
+};

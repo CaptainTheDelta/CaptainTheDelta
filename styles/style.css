@@ -26,6 +26,13 @@ a, a:visited {
 	color: #E6DB74;
 }
 
+img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 70%;
+}
+
 code {
 	display: block;
 	font-family: courier;
@@ -65,6 +72,19 @@ fieldset p { /*p dans un fieldset*/
 fieldset p ~ p { /*p suivant p dans un fieldset*/
 	margin-top: 1em; /*valeur par défaut*/
 	padding-bottom: 0;
+}
+
+
+table {
+	margin-left: auto;
+    margin-right: auto;
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 .meth {

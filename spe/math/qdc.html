@@ -36,6 +36,57 @@
       $$\Sigma_n  = \frac{b-a}{n}\cdot\sum_{k=1}^{n}  \ f\left[a + \frac{k(b-a)}{n}\right]$$
     </p>
   </div>
+
+  <div>
+      <h3 class="sblue">Développements en séries entières classiques avec leurs rayons de convergence</h3>
+      
+      <p class="contenu-flex">
+        <table>
+          <tr>
+            <td>$$\frac{1}{1+x}$$</td>
+            <td>$$\sum_{p=0}^{+\infty} (-1)^p x^p$$</td>
+            <td>$$R=1$$</td>
+          </tr>
+          <tr>
+            <td>$$\ln(1+x)$$</td>
+            <td>$$\sum_{p=1}^{+\infty} (-1)^{p+1} \frac{x^p}{p}$$</td>
+            <td>$$R=1$$</td>
+          </tr>
+          <tr>
+            <td>$$e^x$$</td>
+            <td>$$\sum_{p=0}^{+\infty} (-1)^p x^p$$</td>
+            <td>$$R=+\infty$$</td>
+          </tr>
+          <tr>
+            <td>$$ch(x)$$</td>
+            <td>$$\sum_{p=0}^{+\infty} \frac{x^{2p}}{(2p)!}$$</td>
+            <td>$$R=+\infty$$</td>
+          </tr>
+          <tr>
+            <td>$$sh(x)$$</td>
+            <td>$$\sum_{p=0}^{+\infty} \frac{x^{2p+1}}{(2p+1)!}$$</td>
+            <td>$$R=+\infty$$</td>
+          </tr>
+          <tr>
+            <td>$$cos(x)$$</td>
+            <td>$$\sum_{p=0}^{+\infty} (-1)^p \frac{x^{2p}}{(2p)!}$$</td>
+            <td>$$R=+\infty$$</td>
+          </tr>
+          <tr>
+            <td>$$sin(x)$$</td>
+            <td>$$\sum_{p=0}^{+\infty} (-1)^p \frac{x^{2p+1}}{(2p+1)!}$$</td>
+            <td>$$R=+\infty$$</td>
+          </tr>
+          <tr>
+            <td>$$(1+x)^\alpha$$</td>
+            <td>$$1 + \sum_{p=1}^{+\infty} \frac{\alpha(\alpha-1)...(\alpha-n+1)}{p!}$$</td>
+            <td>$$R=1$$</td>
+          </tr>
+        </table>
+      </p>
+      
+  </div>
+
   <hr>
   <h1 class="sred">Probabilités</h1>
   <div>
@@ -60,6 +111,29 @@
       Alors, pour tout réel $a$ strictement positif,
       $$P\left(\left|\frac{X-E[X]}{\sigma(X)}\right|\ge a\right) \le \frac{1}{a^2}$$
     </p>
+  </div>
+
+  <div>
+    <h3 class="sblue">Loi faible des grands nombres</h3>
+    <p>
+      Soit $(X_n)_{n \ge 1}$ une suite de variables aléatoires discrètes, indépendantes deux à deux et de même loi (ou équidistribuées) telles que $X_n^2$ soit d'espérance finie.
+    </p>
+    <p>
+      Alors, en notant $m = E[X_n]$, $\sigma = \sigma(X_n)$ et $S_n = (X_1 + ... + X_n)/n$, on a pour tout réel $\varepsilon$ strictement positif,
+      $$P(|S_n - m| \ge \varepsilon) \le \frac{\sigma^2}{n\varepsilon^2}$$
+      Par suite,
+      $$\lim_{n \to +\infty} P(|S_n - m| \ge \varepsilon) = 0$$
+    </p>
+    <p>
+      On dit que la suite des moyennes arithmétiques $(S_n)_{n \ge 1}$ converge en probabilité vers $m$.
+    </p>
+    <p>
+      Concrètement, cela signifie que pour $\varepsilon > 0$, la probabilité pour que la moyenne arithmétique s'écarte de $m$ de plus de $\varepsilon$ est pratiquement nulle si $n$ assez grand.
+    </p>
+    <p>
+      Si on répète un grand nombre de fois une expérience correspondant à la variable aléatoire $X$, la moyenne empirique $S_n$ permet d'estimer en probabilité la moyenne de $X$.
+    </p>
+    <p></p>
   </div>
   <hr>
 
@@ -98,6 +172,7 @@
         $$\langle A,B \rangle = \sum_{i=1}^n\sum_{j=1}^n a_{ij}\ b_{ij} = \text{tr}(^tAB)$$
       </p>
     </div>
+
   </body>
 
   <footer>

@@ -118,7 +118,7 @@
       <legend>Flux propre</legend>
       <p>
         Flux du champ créé par un circuit $(\mathcal C)$ à travers le circuit $(\mathcal C)$ lui-même :
-        $$\Phi_{propre} = \iint_S \vec B \cdot \overrightarrow{dS}$$
+        $$\Phi_{propre} = \iint_S \vec B_{propre} \cdot \overrightarrow{dS}$$
       </p>
     </fieldset>
 
@@ -130,6 +130,44 @@
         $L$ est l'inductance propre en Henry ($H$), $L>0$ et dépend de la géométrie du circuit.
       </p>
     </fieldset>
+
+    <div class="meth">
+      <p class="gr">Calcul d'une inductance propre</p>
+      <ol>
+        <li>Orientation du circuit</li>
+        <li>Calcul du champ propre créé par le circuit</li>
+        <li>Calcul du flux propre</li>
+        <li>Indentification de $L$</li>
+      </ol>
+    </div>
+    <div>
+      <p>
+        <span class="it">fém</span> d'auto-induction :
+        $$e_{propre} = -\frac{d\Phi_{propre}}{dt} = -\frac{dLi}{dt}$$
+        Cas d'un circuit filiforme indéformable (<span class="gr">bobine</span> rigide) :
+        $$e_{propre} = -L\frac{di}{dt}$$
+      </p>
+      <p>Energie électromagnétique : $E_m = \frac{1}{2} Li^2$</p>
+    </div>
+
+    <div>
+      <h3>Deux circuits</h3>
+      <img src="../../img/induction.png" alt="Montage deux circuits">
+      <p>
+        $M$ coefficient d'inductance mutuelle entre les deux circuits, $M^2 < L_1 L_2$
+      </p>
+      <p>Flux magnétiques :</p>
+      <ol>
+        <li>Flux total à travers $(\mathcal C_1)$ : $\Phi_1 = L_1 i_1 + M i_2$</li>
+        <li>Flux total à travers $(\mathcal C_2)$ : $\Phi_1 = L_2 i_2 + M i_1$</li>
+      </ol>
+      <p>fem induite</p>
+      <ol>
+        <li>Circuit (1): $e_1 = - \frac{d\Phi_1}{dt} = -L_1 \frac{di_1}{dt} - M\frac{di_2}{dt}$</li>
+        <li>Circuit (2): $e_2 = - \frac{d\Phi_2}{dt} = -L_2 \frac{di_2}{dt} - M\frac{di_1}{dt}$</li>
+      </ol>
+      <p>$E_m = \frac{1}{2}L_1 i_1^2 + \frac{1}{2}L_2 i_2^2 + M i_1 i_2$</p>
+    </div>
 
   </body>
 

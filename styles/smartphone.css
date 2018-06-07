@@ -69,11 +69,19 @@
 	.hide_mobile {
 		display: none !important;
 	}
-
+	
+	/* mes ajouts*/
 	footer::after {
 		content: "Version mobile du site";
 		display: block;
 		text-align: center;
 		font-style: italic;
+	}
+
+	h3 {
+		margin-left: 0;
+	}
+	img {
+		width: 100%;
 	}
 }
