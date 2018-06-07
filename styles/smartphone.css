@@ -1,4 +1,4 @@
-@media (max-width: 640px) {
+@media (max-width: 720px) {
 	* {
 		box-sizing: border-box;
 	}
@@ -68,5 +68,12 @@
 
 	.hide_mobile {
 		display: none !important;
+	}
+
+	footer::after {
+		content: "Version mobile du site";
+		display: block;
+		text-align: center;
+		font-style: italic;
 	}
 }

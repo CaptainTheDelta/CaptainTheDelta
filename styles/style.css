@@ -64,7 +64,7 @@ fieldset p { /*p dans un fieldset*/
 
 fieldset p ~ p { /*p suivant p dans un fieldset*/
 	margin-top: 1em; /*valeur par défaut*/
-	background-color: black;
+	padding-bottom: 0;
 }
 
 .meth {
