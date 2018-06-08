@@ -18,6 +18,9 @@
         },
         CommonHTML: {
           minScaleAdjust: 90
+        },
+        TeX: {
+          extensions: ["noErrors.js","noUndefined.js"]
         }
       });
     </script>
@@ -79,7 +82,8 @@
           </tr>
         </table>
         <p>
-          $$(1+x)^\alpha=1 + \sum_{p=1}^{+\infty} \frac{\alpha(\alpha-1)...(\alpha-n+1)}{p!}$$ avec $R=1$
+          $$(1+x)^\alpha=1 + \sum_{p=1}^{+\infty} \frac{\alpha(\alpha-1)...(\alpha-n+1)}{p!} x^p$$
+          avec $R=1$
         </p>
       </p>
       
@@ -187,14 +191,14 @@
           <li>Procédé</li>
         </ul>
         <p>
-          Algorithme de construction dans un espace préhilbertien d'une famille orthonormée $(\vec e_n')_{n \ge 1}$ à partir d'une famille libre $(\vec e_n)_{n \ge 1}$.
+          Algorithme de construction dans un espace préhilbertien d'une famille orthonormée $(\overrightarrow e_n')_{n \ge 1}$ à partir d'une famille libre $(\vec e_n)_{n \ge 1}$.
         </p>
         <p>
           Pour cela, on montre par récurrence la proposition $\mathcal P_k$ suivante :<br>
           Il existe une famille orthonormée de vecteurs $(\vec e_1',...,\vec e_k')$ telle que $Vect(\vec e_1,...,\vec e_k)=Vect(\vec e_1',...,\vec e_k')$ et $\langle \vec e_k, \vec e_k' \rangle > 0$.
         </p>
         <p>
-          On fonde la récurrence en posant $\vec e_1' = \vec e_1/\|\vec e_1\| vecteur unitaire tel que :
+          On fonde la récurrence en posant $\vec e_1' = \vec e_1/\|\vec e_1\|$ vecteur unitaire tel que :
           $$\langle \vec e_1',\vec e_1\rangle = \|\vec e_1\| > 0$$
         </p>
         <p>
@@ -217,6 +221,32 @@
           On a terminé la récurrence en prouvant que  $\mathcal P_{k+1}$ est vraie.
         </p>
       </div>
+      <ul>
+        <li>Poème</li>
+      </ul>
+      <div class="poem">
+        <pre>
+          Envie d'ordre, de paix, d'angles droits, de corps sages ?
+          Ne seriez-vous pas las de ces bases sauvages ?
+          Oyez, braves matheux, sortez de vos guérites,
+          Écoutez les conseils de messieurs Gram et Schmidt !
+
+          Divisez par sa norme un vecteur esseulé
+          Si vous en avez n, pensez à morceler :
+          Supposons qu'n-1 vous soient déjà plaisants,
+          trouvez le dernier-né et saisissez vous-en !
+
+          Retranchez-lui ce qui, chez ses frères, lui pèse ;
+          Frais, libre, orthogonal et revitalisé,
+          Il ne vous reste plus qu'à le normaliser.
+
+          Ainsi par récurrence on poursuit la genèse.
+          Plus fort que Vandermonde et plus puissant qu'Hermite,
+          C'est l'humble procédé de messieurs Gram et Schmidt !
+
+          Guillaume Dubach
+        </pre>
+      </div>
     </div>
 
     <div>
@@ -234,8 +264,8 @@
       </ul>
       <p>
         Pour tous vecteurs $\vec u$ et $\vec v$ d'un espace préhilbertien $E$,
-        $$\|\vec u + vec v\| \le \|\vec u\|+\|\vec v\|$$
-        avec égalité si et seulement si les deux vecteurs $\vec u$ et $\vec v$ sont colinéaires.
+        $$\|\vec u + \vec v\| \le \|\vec u\|+\|\vec v\|$$
+        avec égalité si et seulement si les deux vecteurs $\vec u$ et $\vec v$ sont colinéaires et de même sens.
       </p>
     </div>
 

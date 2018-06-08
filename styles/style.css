@@ -22,6 +22,10 @@ h3 {
 	margin-left: 2em;
 }
 
+pre {
+	text-indent: 0px;
+}
+
 a, a:visited {
 	color: #E6DB74;
 }
@@ -118,6 +122,10 @@ td {
 
 .sblue {
 	text-decoration: underline #66D9EF;
+}
+
+.poem {
+	font-family: "Times New Roman",monospace;
 }
 
 @media screen {
