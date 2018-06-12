@@ -85,9 +85,44 @@
           $$(1+x)^\alpha=1 + \sum_{p=1}^{+\infty} \frac{\alpha(\alpha-1)...(\alpha-p+1)}{p!} x^p$$
           avec $R=1$
         </p>
-      </p>
-      
+      </p>    
   </div>
+  <div>
+    <h3 class="sblue">Continuité et dérivabilité des intégrales à paramètre</h3>
+    <ul>
+      <li>pour tout $t$ dans $I$, $f_t$ est continue sur $J$</li>
+      <li>pour tout $x$ dans $J$, $f_x$ est continue sur $I$</li>
+      <li>
+        $f$ vérifie une hypothèse de domination sur $I \times J$, c'est à dire, il existe une fonction $\varphi$ continue intégrable sur $I$ telle que
+        $$ \forall (t,x) \in I\times J \quad |f(t,x)| \led \varphi(t)$$
+      </li>
+    </ul>
+    <p>alors $F$ est continue sur J.</p>
+    
+    <ul>
+      <li>pour tout $t$ dans $I$, $f_t$ est de classe $C^1$ sur $J$</li>
+      <li>pour tout $x$ dans $J$, $f_x$ est intégrable sur $I$</li>
+      <li>pour tout $x$ dans $J$, $t \mapsto \frac{\partial f}{\partial x}(t,x)$continue sur $I$</li>
+      <li>
+        $\frac{\partial f}{\partial x}$ vérifie une hypothèse de domination sur $I \times J$, c'est à dire, il existe une fonction $\varphi$ continue intégrable sur $I$ telle que
+        $$ \forall (t,x) \in I\times J \quad |\frac{\partial f}{\partial x}(t,x)| \led \varphi(t)$$
+      </li>
+    </ul>
+    <p>
+      alors $F$ est de classe $C^1$ sur J et
+      $$F'(x) = \int_I \frac{\partial f}{\partial x}(x,t)dt$$
+      (formule de Leibniz)
+    </p>
+  </div>
+
+    <div>
+      <h3 class="sblue">Formules de Leibniz (dérivée d'un produit, dérivée d'une intégrale à paramètre)</h3>
+      <p>dérivée d'une intégrale à paramètre, voir au-dessus</p>
+      <p>
+        $$(f\cdot g)^{(n)} = \sum\{p=0}^n \binom{n}{k} f^(p)\cdot g^{(n-p)}$$
+      </p>
+    </div>
+
 
   <hr>
   <h1 class="sred">Probabilités</h1>
@@ -138,6 +173,7 @@
     <p></p>
   </div>
   <hr>
+
 
   <h1 class="sred">Algèbre-Géométrie</h1>
     <div>
@@ -269,6 +305,68 @@ Guillaume Dubach
       </p>
     </div>
 
+    <div>
+      <h3 class="sblue">Isométrie vectorielle</h3>
+      <p>
+        Une isométrie vectorielle d'un espace euclidien $E$ est un endomorphisme $f$ de $E$ qui conserve le produit scalaire, c'est à dire, tel que
+        $$\forall \vec u \in E\quad \forall \vec v \in E\qquad \langle f(\vec u),f(\vec v)\rangle = \langle vec u,\vec v\rangle
+      </p>
+    </div>
+
+    <div>
+      <h3 class="sblue">Isométrie vectorielle</h3>
+      <p>
+        Une isométrie vectorielle d'un espace euclidien $E$ est un endomorphisme $f$ de $E$ qui conserve le produit scalaire, c'est à dire, tel que
+        $$\forall \vec u \in E\quad \forall \vec v \in E\qquad \langle f(\vec u),f(\vec v)\rangle = \langle vec u,\vec v\rangle
+      </p>
+      <p>
+        $f$ isométrie de $E$ ssi <br>
+        $f$ conseve la norme, $\forall \vec u \in E\quad \|f(\vec u)\| = \|\vec u\| <br>
+        $f$ transforme une base orthonormée en une base orthonormée. <br>
+        La matrice de $f$ dans une base orthonormée de $E$ est orthogonale.
+      </p>
+      <p>
+        Soit $f$ une isométrie d'un espace euclidien $E$. Alors :
+      </p>
+      <ul>
+        <li>Si $\lambda$ valeur propre de $f$, alors $\lambda = +/- 1</li>
+        <li>Si $\vec u$ et $vec v$ sont deux vecteurs propres de f associées respectivement aux valeurs propres$1$ et $-1$ de $f$ alors ils sont orthogonaux.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="sblue">Matrices orthogonales</h3>
+      <ul>
+        <li>Définition</li>
+      </ul>
+      <p>
+        Soit $E$ une espace euclidien muni d'une base orthonormée $B$.
+      </p>
+      <p>
+        $M$ orthogonale ssi $^tPP = I_n$ ou $^tP = P^{-1}$
+      </p>
+      <p>
+        Une autre de base $B'$ de $E$ est orthonormée si et seulement si la matrice de passage $P$ de $B$ à $B'$ est orthogonale.
+      </p>
+      <ul>
+        <li>Cas des ordres 1 et 2</li>
+      </ul>
+      <p>
+        $$
+        \begin{pmatrix}
+          a & -b \\
+          b & a \\
+        \end{pmatrix}
+        \qquad
+        \begin{pmatrix}
+          a & b \\
+          b & -a \\
+        \end{pmatrix}
+        $$
+        avec
+        $$a^2 + b^2 =1$$
+      </p>
+    </div>
   </body>
 
   <footer>
